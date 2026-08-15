@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROY THAKUR - Cricket Analyst</title>
-
+    <title>THE CHIRU ANAND Katte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,149 +17,238 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '26712365371704586'); 
+    fbq('init', '2216849625794883');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=26712365371704586&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=2216849625794883&ev=PageView&noscript=1"
     /></noscript>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0f172a;
-            color: white;
+            background-color: #060b13;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            flex-direction: column;
+            padding: 20px 10px;
         }
 
-        .container {
+        /* Main Card Container */
+        .landing-card {
+            background: linear-gradient(180deg, #131c2e 0%, #0d1524 100%);
             width: 100%;
-            max-width: 400px;
-            background: #1e293b;
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            max-width: 450px;
+            border-radius: 24px;
+            border: 1px solid #1e293b;
+            padding: 35px 24px;
             text-align: center;
-            margin-bottom: 20px;
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
         }
 
-        .header {
-            padding: 40px 20px 10px;
-        }
-
-        .profile {
-            width: 120px;
-            height: 120px;
+        /* Logo Styling */
+        .logo-container {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px auto;
             border-radius: 50%;
-            border: 4px solid #2563eb;
+            background: #facc15;
+            padding: 4px;
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
         }
 
-        .name {
-            font-size: 28px;
+        /* Headings */
+        .brand-name {
+            color: #facc15;
+            font-size: 20px;
             font-weight: 800;
-            margin: 10px 0 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
 
-        .sub-count {
-            color: #94a3b8;
-            font-size: 14px;
-            margin-bottom: 15px;
+        .segments {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
         }
 
         .tagline {
-            font-weight: 700;
-            color: #fff;
-            margin: 10px 0;
-            font-size: 16px;
-        }
-
-        .description {
+            color: #94a3b8;
             font-size: 14px;
-            color: #cbd5e1;
-            padding: 0 30px;
-            line-height: 1.4;
+            font-weight: 400;
             margin-bottom: 25px;
         }
 
-        .telegram-btn {
-            display: block;
-            margin: 0 25px 25px;
-            padding: 18px;
-            background: #2563eb;
-            color: white;
+        /* Telegram Buttons */
+        .btn-telegram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #00E65B; 
+            color: #000000;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(37, 99, 235, 0.3);
-            animation: pulse 2s infinite;
+            font-size: 16px;
+            font-weight: 800; 
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            box-shadow: 0px 6px 20px rgba(0, 230, 91, 0.35);
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 8px 15px rgba(37, 99, 235, 0.3); }
-            50% { transform: scale(1.03); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5); }
-            100% { transform: scale(1); box-shadow: 0 8px 15px rgba(37, 99, 235, 0.3); }
+        .btn-telegram:hover {
+            transform: scale(1.02);
+            background-color: #00b344; 
         }
 
-        .footer-note {
-            font-size: 12px;
-            color: #64748b;
-            padding: 0 20px 25px;
+        /* Proof/Trust Box */
+        .trust-box {
+            background-color: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 12px;
+            margin: 15px 0 25px 0;
         }
 
-        /* Kunal Ads Section */
-        .ads-promo {
-            margin-top: 10px;
+        .trust-item {
+            color: #e2e8f0;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 4px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Features List */
+        .features-list {
+            text-align: left;
+            max-width: 320px;
+            margin: 0 auto 25px auto;
+        }
+
+        .feature-item {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Subtext & Urgency */
+        .urgency-text {
+            color: #facc15;
             font-size: 13px;
-            color: #94a3b8;
-            background: rgba(30, 41, 59, 0.8);
-            padding: 12px 20px;
-            border-radius: 50px;
-            border: 1px solid #334155;
+            font-weight: 600;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
         }
 
-        .ads-promo a {
+        .community-text {
+            color: #94a3b8;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 12px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .disclaimer {
+            color: #64748b;
+            font-size: 11px;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+
+        /* Footer Attribution */
+        .footer-credit {
+            color: #64748b;
+            font-size: 12px;
+            margin-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 15px;
+        }
+
+        .footer-credit a {
             color: #3b82f6;
             text-decoration: none;
-            font-weight: 800;
-            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .footer-credit a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header">
-        <img class="profile" src="logo.png" alt="Roy Thakur">
-        <div class="name">ROY THAKUR</div>
-        <div class="sub-count">14,429 subscribers</div>
-        
-        <div class="tagline">MEH NHI MERA KAAM BOLTA HAI 🔥</div>
-        <div class="description">
-            The Real Cricket Analyst..<br>
-            Jo Duniya Soch Nhi Sakte Wo Kaam Karne Ka Dum Rakhata Hu Me Cricket Line Me..
+    <div class="landing-card">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <h1 class="brand-name">THE CHIRU ANAND Katte<br>𝐓𝐑𝐀𝐃𝐈𝐍𝐆 𝐀𝐂𝐀𝐃𝐄𝐌𝐘</h1>
+        <div class="segments">NIFTY • BANKNIFTY • OPTIONS</div>
+        <p class="tagline">Daily Intraday Trading Signals & Analysis</p>
+
+        <a href="https://t.me/+6-UxIDpgz6E0MTM1" class="btn-telegram" target="_blank">
+            🚀 Join Free Telegram Channel
+        </a>
+
+        <div class="trust-box">
+            <div class="trust-item">✓ Trusted by 5,000+ Traders</div>
+            <div class="trust-item">✓ Daily Consistent Setups</div>
+        </div>
+
+        <div class="features-list">
+            <div class="feature-item">✓ 5-7 High Probability Trades</div>
+            <div class="feature-item">✓ Exact Entry, SL & Target</div>
+            <div class="feature-item">✓ Beginner Friendly Guidance</div>
+            <div class="feature-item">✓ Live Market Updates</div>
+        </div>
+
+        <a href="https://t.me/+l7OcDL4fkRU3NDhl" class="btn-telegram" target="_blank">
+            🚀 Join Free Telegram Channel
+        </a>
+
+        <div class="urgency-text">⏳ Free Access Closing Soon</div>
+        <div class="community-text">📈 Limited Seats • Active Community</div>
+        <div class="disclaimer">⚠️ Market investments are subject to risk</div>
+
+        <div class="footer-credit">
+            Powered by <a href="https://t.me/+jE7sEbzR23gwM2U1" target="_blank">kunal</a>
         </div>
     </div>
-
-    <a href="https://t.me/+nAWXdxATH9ZkM2I1" class="telegram-btn" onclick="fbq('track', 'Lead');">
-        Request to Join Channel
-    </a>
-
-    <div class="footer-note">
-        This channel accepts new subscribers only after they are approved by its admins.
-    </div>
-</div>
-
-<div class="ads-promo">
-    Meta Ads Setup ke liye DM karein 👉 <a href="https://t.me/+jE7sEbzR23gwM2U1">@KunalAds</a>
-</div>
 
 </body>
 </html>
